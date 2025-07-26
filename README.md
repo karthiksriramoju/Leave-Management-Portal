@@ -126,6 +126,17 @@ pnpm run preview
 ```
 
 ---
+## 🔐 Demo Credentials (for testing)
+
+Use the following credentials to test different roles in the app:
+
+| Role     | Email                         | Password      |
+|----------|-------------------------------|---------------|
+| Employee | employee@gmail.com | `password123` |
+| Manager  | manager@gmail.com   | `password123` |
+| Admin    | admin@gmail.com      | `password123` |
+
+---
 
 ## 🎨 Styling & UI
 
