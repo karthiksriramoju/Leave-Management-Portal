@@ -49,10 +49,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer 
       <footer className="w-full py-6 text-center text-sm text-gray-500 border-t border-gray-200">
         © {new Date().getFullYear()} Leave Management Portal
       </footer>
+      */}
     </main>
   );
 }
