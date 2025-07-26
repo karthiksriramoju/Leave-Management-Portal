@@ -31,7 +31,7 @@ Leave management is often a manual and error-prone process in many organizations
 - Configure total leaves, leave types, holidays
 - Approve/reject any leave requests
 - Manage all users and teams
-- View leave usage analytics (if implemented)
+- View leave usage analytics 
 
 ---
 
