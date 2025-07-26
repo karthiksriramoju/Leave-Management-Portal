@@ -148,7 +148,6 @@ Use the following credentials to test different roles in the app:
 | Install Dependencies | `pnpm i`            |
 | Start Development    | `pnpm run dev`      |
 | Build Project        | `pnpm run build`    |
-| Preview Build        | `pnpm run preview`  |
 
 ---
 
@@ -162,9 +161,4 @@ Use the following credentials to test different roles in the app:
 - **Rohini** – Helped with backend logic and leave workflows  
 - **Medhilesh** – Worked on authentication and integration  
 - **Sahasra** – Contributed to testing and UI refinement
-
----
-
-## 📄 License
-
-MIT License. Feel free to use and build upon it with attribution.
+  
