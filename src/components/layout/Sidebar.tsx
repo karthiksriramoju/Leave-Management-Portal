@@ -15,7 +15,7 @@ export default function Sidebar() {
   const menuItems = [
     {
       name: 'Dashboard',
-      href: '/',
+      href: '/index',
       icon: HomeIcon,
       roles: ['employee', 'manager', 'admin']
     },
@@ -59,8 +59,8 @@ export default function Sidebar() {
     <aside className="flex h-full w-64 flex-col border-r border-gray-200 bg-white">
       <div className="flex h-14 items-center border-b px-4">
         <Link to="/" className="flex items-center">
-          <h1 className="text-3xl font-bold">
-            LEAVE <span className="text-purple-500">LANE</span>
+          <h1 className="text-2xl font-bold">
+            LEAVE <span className="text-gray-500">LANE</span>
           </h1> 
         </Link>
       </div>
@@ -73,14 +73,14 @@ export default function Sidebar() {
               className={cn(
                 'group flex items-center rounded-md px-2 py-2 text-sm font-medium',
                 isActive(item.href)
-                  ? 'bg-blue-50 text-blue-600'
+                  ? 'bg-gray-100 text-black-600'
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               )}
             >
               <item.icon
                 className={cn(
                   'mr-3 h-5 w-5',
-                  isActive(item.href) ? 'text-blue-600' : 'text-gray-500 group-hover:text-gray-500'
+                  isActive(item.href) ? 'text-black-900' : 'text-gray-500 group-hover:text-gray-500'
                 )}
               />
               {item.name}
@@ -91,7 +91,7 @@ export default function Sidebar() {
       <div className="flex flex-shrink-0 border-t border-gray-200 p-4">
         <div className="flex w-full items-center">
           <div className="flex-shrink-0">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-black-600">
               {user?.name?.charAt(0) || 'U'}
             </div>
           </div>

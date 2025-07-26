@@ -4,7 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { AlertCircle } from 'lucide-react';
 
@@ -24,7 +31,7 @@ export default function LoginForm() {
     try {
       const success = await login(email, password);
       if (success) {
-        navigate('/');
+        navigate('/index');
       } else {
         setError('Invalid email or password. Please try again.');
       }
@@ -37,59 +44,50 @@ export default function LoginForm() {
   };
 
   return (
-    <Card className="w-full max-w-md">
-      <CardHeader>
-        <CardTitle className="text-center text-2xl">Login</CardTitle>
-        <CardDescription className="text-center">
-          Enter your credentials to access the Leave Management Portal.
+    <Card className="w-full max-w-md shadow-xl border border-gray-200 rounded-2xl bg-white">
+      <CardHeader className="space-y-1 text-center">
+        <CardTitle className="text-2xl font-bold">Login</CardTitle>
+        <CardDescription className="text-gray-500">
+          Access your account to manage your leaves
         </CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
         <CardContent className="space-y-4">
           {error && (
-            <Alert variant="destructive">
-              <AlertCircle className="h-4 w-4" />
+            <Alert variant="destructive" className="flex gap-2 items-start">
+              <AlertCircle className="h-4 w-4 mt-1" />
               <AlertDescription>{error}</AlertDescription>
             </Alert>
           )}
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className="text-sm font-medium">Email</Label>
             <Input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="you@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              className="rounded-md border-gray-300 focus:ring-black"
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password" className="text-sm font-medium">Password</Label>
             <Input
               id="password"
               type="password"
-              placeholder="Enter your password"
+              placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              className="rounded-md border-gray-300 focus:ring-black"
             />
           </div>
-  {/*
-          <div className="pt-2 text-sm">
-              <p>Demo Accounts:</p>
-            <ul className="space-y-1 list-disc pl-5 text-muted-foreground">
-            <li>Employee: employee@vibecoding.com / password123</li>
-              <li>Manager: manager@vibecoding.com / password123</li>
-              <li>Admin: admin@vibecoding.com / password123</li>
-                <li>Intern: intern@vibecoding.com / password123</li> 
-            </ul>
-          </div>
-          */}
         </CardContent>
         <CardFooter>
           <Button
             type="submit"
-            className="w-full"
+            className="w-full bg-black text-white hover:bg-gray-900 transition"
             disabled={isLoading}
           >
             {isLoading ? 'Logging in...' : 'Login'}

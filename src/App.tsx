@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from '@/contexts/AuthContext';
 import { LeaveProvider } from '@/contexts/LeaveContext';
+import Landing from './pages/Landing';
 
 // Pages
 import Index from './pages/Index';
@@ -25,8 +26,9 @@ const App = () => (
           <Toaster />
           <BrowserRouter>
             <Routes>
+              <Route path="/" element={<Landing />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/" element={<Index />} />
+              <Route path="/index" element={<Index />} />
               <Route path="/leaves" element={<Leaves />} />
               <Route path="/apply-leave" element={<ApplyLeave />} />
               <Route path="/work-from-home" element={<WorkFromHome />} />
