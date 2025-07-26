@@ -62,7 +62,7 @@ All `shadcn/ui` components are pre-installed under `@/components/ui`.
     ├── main.tsx
     ├── index.css
     └── components
-        └── ui         # shadcn pre-built components
+        └── ui         
 ```
 
 > 📌 The `@/` path alias points to the `src/` directory
