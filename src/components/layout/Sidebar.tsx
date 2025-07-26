@@ -59,7 +59,9 @@ export default function Sidebar() {
     <aside className="flex h-full w-64 flex-col border-r border-gray-200 bg-white">
       <div className="flex h-14 items-center border-b px-4">
         <Link to="/" className="flex items-center">
-          <span className="text-xl font-bold text-blue-600">LEAVE WISE</span>
+          <h1 className="text-3xl font-bold">
+            LEAVE <span className="text-purple-500">LANE</span>
+          </h1> 
         </Link>
       </div>
       <div className="flex flex-1 flex-col overflow-y-auto py-4">
