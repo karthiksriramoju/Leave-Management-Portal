@@ -148,7 +148,7 @@ pnpm run preview
 ## 🙌 Contributors
 
 ### 👨‍💻 Team Lead
-- **Karthik Sriramoju** – Full-stack Developer, Project Lead, Primary Contributor
+- **Karthik Sriramoju** – Full-stack Developer, Project Lead
 
 ### 👥 Teammates
 - **Maithri** – Contributed to UI and feature design  
