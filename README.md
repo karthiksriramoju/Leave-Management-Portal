@@ -91,7 +91,7 @@ All `shadcn/ui` components are pre-installed under `@/components/ui`.
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/<your-username>/leave-management-portal.git
+git clone https://github.com/karthiksriramoju/leave-management-portal.git
 cd leave-management-portal
 ```
 
