@@ -119,12 +119,6 @@ pnpm run dev
 pnpm run build
 ```
 
-5. **Preview the Production Build**
-
-```bash
-pnpm run preview
-```
-
 ---
 ## 🔐 Demo Credentials (for testing)
 
