@@ -71,15 +71,17 @@ All `shadcn/ui` components are pre-installed under `@/components/ui`.
 
 ## 🔍 Navigation Guide
 
-| Path                 | Description                           | Access Role    |
-|----------------------|----------------------------------------|----------------|
-| `/login`             | Authentication screen                  | Public         |
-| `/dashboard`         | Redirect based on role                 | All users      |
-| `/leave/apply`       | Submit a leave request                 | Employee       |
-| `/leave/team`        | View & act on team leave requests      | Manager        |
-| `/admin/config`      | Configure policies, leaves, holidays   | Admin only     |
-| `/holidays`          | View holidays                          | All users      |
-| `/profile`           | User details and history               | All users      |
+| Path                   | Description                                      | Access Role       |
+|------------------------|--------------------------------------------------|-------------------|
+| `/`                    | Landing page with project intro or welcome      | Public            |
+| `/login`               | Login screen for all roles                      | Public            |
+| `/index`               | Dashboard that redirects based on user role     | Employee / Manager / Admin |
+| `/leaves`              | View user's own leave history & status          | Employee          |
+| `/apply-leave`         | Apply for a new leave                           | Employee          |
+| `/work-from-home`      | Request work from home                          | Employee          |
+| `/team-leaves`         | View & manage team leave requests               | Manager           |
+| `/admin`               | Admin panel for configuring policies, holidays  | Admin             |
+| `*` (fallback route)   | Page Not Found                                  | Public            |
 
 ---
 
@@ -143,11 +145,16 @@ pnpm run preview
 
 ---
 
-## 🙌 Contributions
+## 🙌 Contributors
 
-This is a solo project built and maintained by **Karthik Sriramoju**.
+### 👨‍💻 Team Lead
+- **Karthik Sriramoju** – Full-stack Developer, Project Lead, Primary Contributor
 
-Feel free to fork, modify, or reach out for any feedback or improvements!
+### 👥 Teammates
+- **Maithri** – Contributed to UI and feature design  
+- **Rohini** – Helped with backend logic and leave workflows  
+- **Medhilesh** – Worked on authentication and integration  
+- **Sahasra** – Contributed to testing and UI refinement
 
 ---
 
