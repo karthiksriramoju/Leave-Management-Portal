@@ -41,7 +41,7 @@ export default function LoginForm() {
       <CardHeader>
         <CardTitle className="text-center text-2xl">Login</CardTitle>
         <CardDescription className="text-center">
-          Enter your credentials to access the Vibe Coding HRMS
+          Enter your credentials to access the Leave Management Portal.
         </CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
