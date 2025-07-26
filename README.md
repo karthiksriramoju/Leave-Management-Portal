@@ -1,6 +1,7 @@
 # Leave Management Portal 🗓️
-
 A full-stack **Leave Management Portal** where employees can request leaves, managers can approve/reject them, and admins can configure policies, manage teams, and view all leave-related data. This portal streamlines internal HR processes for efficient leave tracking and approval.
+
+<img width="3360" height="1640" alt="Untitled design (6)" src="https://github.com/user-attachments/assets/295fa006-e2ad-465e-99fd-3085c9e11f5c" />
 
 ---
 
